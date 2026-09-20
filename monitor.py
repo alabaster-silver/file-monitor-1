@@ -32,8 +32,3 @@ def hashit(filepath: pathlib.Path) -> str:
     # the digest part of hexdigest is just outputting
     # js digest() would give something random in binary bytes
     return createhash.hexdigest()
-
-# js testing if it works first
-newtest = pathlib.Path("randomtext.txt")
-newtest.write_text("The Honda Odyssey is a minivan manufactured by Japanese automaker Honda and marketed for the North American market, introduced in 1994.")
-print(hashit(newtest))
